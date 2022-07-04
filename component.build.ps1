@@ -18,4 +18,9 @@ task Build {
 	Copy-Item $PSScriptRoot\UniversalDashboard.*.psm1 $OutputPath
 }
 
+task Publish {
+	Rename-Item -Path $OutputPath -NewName "UniversalDashboard.TinyMCE"
+	Publish-Module -Path $OutputPath -NuGetApiKey $Env:APIKEY
+}
+
 task . Build
