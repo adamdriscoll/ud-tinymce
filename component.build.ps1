@@ -20,7 +20,7 @@ task Build {
 
 task Publish {
 	Rename-Item -Path $OutputPath -NewName "UniversalDashboard.TinyMCE"
-	Publish-Module -Path $OutputPath -NuGetApiKey $Env:APIKEY
+	Publish-Module -Path "$PSScriptRoot/UniversalDashboard.TinyMCE" -NuGetApiKey $Env:APIKEY
 }
 
 task . Build
