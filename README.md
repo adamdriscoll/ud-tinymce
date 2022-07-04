@@ -2,7 +2,7 @@
 
 This component integrates the [TinyMCE](https://www.tiny.cloud) React component into Universal Dashboard. 
 
-![](.\screenshot.png)
+![](screenshot.png)
 
 ## Installation 
 
