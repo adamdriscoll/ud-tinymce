@@ -2,6 +2,8 @@
 
 This component integrates the TinyMCE React component into Universal Dashboard. 
 
+![](.\screenshot.png)
+
 ## Installation 
 
 ```powershell
