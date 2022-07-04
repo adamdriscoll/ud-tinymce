@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tinymce/tinymce-react": "^4.1.0",
     "universal-dashboard": "^1.0.1"
   },
   "devDependencies": {
