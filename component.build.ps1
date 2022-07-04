@@ -1,8 +1,8 @@
-$OutputPath = "$PSScriptRoot\output"
+$OutputPath = "$PSScriptRoot/output"
 
 task Build {
 	Remove-Item -Path $OutputPath -Force -ErrorAction SilentlyContinue -Recurse
-	Remove-Item -Path "$PSScriptRoot\public" -Force -ErrorAction SilentlyContinue -Recurse	
+	Remove-Item -Path "$PSScriptRoot/public" -Force -ErrorAction SilentlyContinue -Recurse	
 	Set-Location $PSScriptRoot
 
 	& {
