@@ -6,11 +6,9 @@ function New-UDTinyMCE {
         [Parameter()]
         [string]$Id = (New-Guid).ToString(),
         [Parameter()]
-        [string]$ApiKey,
-        [Parameter()]
         [string]$InitialValue,
         [Parameter()]
-        [Hashtable]$Init,
+        [Hashtable]$Init = @{},
         [Parameter()]
         [Endpoint]$OnEditorChange
     )
@@ -27,7 +25,6 @@ function New-UDTinyMCE {
             type           = "ud-tinymce"
             id             = $Id
 
-            apiKey         = $ApiKey
             initialValue   = $InitialValue
             init           = $init
             onEditorChange = $OnEditorChange

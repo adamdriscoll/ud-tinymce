@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { withComponentFeatures } from 'universal-dashboard'
-import { Editor } from '@tinymce/tinymce-react';
+import BundledEditor from './BundledEditor'
 
 const UDComponent = props => {
   const editorRef = useRef(null);
 
-  return (<Editor
+  return (<BundledEditor
     onInit={(evt, editor) => editorRef.current = editor}
     {...props}
     onEditorChange={(value) => {

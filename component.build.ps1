@@ -5,7 +5,7 @@ task Build {
 	Remove-Item -Path "$PSScriptRoot\public" -Force -ErrorAction SilentlyContinue -Recurse	
 	Set-Location $PSScriptRoot
 
-	&{
+	& {
 		$ErrorActionPreference = 'SilentlyContinue'
 		npm install
 		npm run build
